@@ -1,0 +1,40 @@
+.one{
+    background: gray;
+    height: 100%;
+}
+.two{
+    background: pink;
+    height: 100%;
+}
+.three{
+    background: green;
+    height: 100%;
+}
+.img{
+    height: 30%;
+    width: 30%;
+}
+.navbar-nav mr-auto{
+    background: gray;
+    
+    
+}
+.nav-item {
+    
+    background:white;
+    margin: 5%;
+    display: inline;
+    
+}
+.nav-item li
+{
+    display: inline;
+}
+/* img{
+    height: 5%;
+} */
+/* .nav-item dropdown{
+margin-left: 1%;
+background: blue;
+} */
+

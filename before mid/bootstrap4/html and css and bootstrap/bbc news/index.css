@@ -1,0 +1,41 @@
+.one{
+    background: rgb(190, 10, 10);
+    height: 100%;
+}
+.two{
+    background: white;
+    height: 100%;
+}
+
+
+.nav-item {
+    
+    background:white;
+    margin-top: 1%;
+    display: inline;
+    
+    
+}
+h1,h2,h3{
+    margin: 0%;
+}
+.li-list{
+    margin-left: 13%;
+    text-decoration: none;
+    
+}
+.second-unorder-list{
+    display: inline-flex;
+}
+
+.second-unorder-list .nav-link{
+    color: white;
+}
+li{
+    list-style: none;
+}
+
+.pic-text{
+    display: flex;
+}
+

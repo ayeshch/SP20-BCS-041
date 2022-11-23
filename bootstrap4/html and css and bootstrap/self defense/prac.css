@@ -1,0 +1,11 @@
+
+.flex-container{
+    display: flex;
+    width: 100px;   
+}
+.flex-container > div{
+    justify-content: space-between;
+    line-height: 30px; 
+    background: blue;
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+div{
+    border: 1px dashed blue;
+    padding: 0;
+    margin: 3px;
+}
+#first{
+    background-color: gray;
+}
+#super{
+    text-decoration: underline;
+}
