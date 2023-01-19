@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="img-collection">
+         <img style="width: 110%;" 
+         src="https://cdn.shopify.com/s/files/1/0586/9187/9111/collections/22.png?v=1645961207">
+    </div>
+    <div class="absolute">
+        <h3>
+            <span><b>ALL OFFERS</b></span>
+        </h3>
+    </div>
+    <div class="container-padd60">
+        <div class="breadcrumb ">
+          
+            <a href="/" data-translate="general.breadcrumbs.home">Home</a>  
+             <span class="arrow">
+                <!-- <i class="fa fa-angle-right" aria-hidden="true"></i> -->
+                <i class="bi bi-caret-right"></i> 
+                
+              </span>
+          
+              <span class="bd-title">
+                
+                <span><a href="/offers" title="">All OFFERS</a></span>
+                
+                </span>
+        
+              
+          
+          
+          
+        </div>
+        
+        
+            </div>
+</div>
+<div class="row">
+    <% for(var i=0;i<products.length;i++) {%>
+      <div class="col-4" style="padding: 3%;">
+        <div><h5><b><%=products[i].name %></b></h5></div>
+        <div>
+          <img
+              src="/images/uploaded/<%=products[i].image %>"
+              alt=""
+              width="70%"
+            />
+        </div>
+        <div>
+          <div>
+            <p><b><%=products[i].description %></b></p>
+            <p><b>Price: </b><%=products[i].price %></p>
+            <p><b>Color: </b><%=products[i].color %></p>
+          </div>
+          <a href="/add-cart/<%=products[i]._id %>" class="btn btn-info w-full"
+            >Add To Cart</a
+          >
+        </div>
+      </div>
+      <% } %>
+
+    </products.length;i++)>
+ </div>
+</div>

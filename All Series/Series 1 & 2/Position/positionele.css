@@ -1,0 +1,28 @@
+#second{
+    background-color: aqua;
+    z-index: 1000;
+    position: relative;
+}
+#third p{
+    background-color:blue;
+    z-index: 2000;
+    position: relative;
+}
+#annoucement{
+    background-color: yellowgreen;
+    position: fixed;
+    bottom: 0;
+    
+}
+#sticky{
+    background-color: blueviolet;
+    position: sticky;
+    top: 0;
+}
+#container{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 8;
+}

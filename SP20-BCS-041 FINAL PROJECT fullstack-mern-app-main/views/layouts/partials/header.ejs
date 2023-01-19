@@ -1,0 +1,115 @@
+<div class="header" style="display: inline;" >
+  
+    <form action="/search" method="get" class="" role="search" style="margin-top: 1%; ">
+      <div class="text-serviceNo" style="margin-left:60% ;" >
+        <span>Customer Service +93-306-0448888</span>
+      
+      <input type="search" name="q" placeholder="Search" aria-label="Search Site" style="margin-left:4px; ">
+      <button type="submit" class="btn icon-search">
+        
+      </button>
+    </div>
+    <marquee scrollamount="6" class="light-theme sticky " style="margin-top: 1%;" >
+      “Never ask a girl with winged eyeliner why she’s late.”
+      <!-- "The most beautiful makeup for a woman is passion. But cosmetics are easier to buy." -->
+    </marquee>
+    </form>
+  
+
+<div style="display: inline-flex;">
+  
+  <div >
+    <a class="navbar-brand" href="/"  >
+      <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/Logo.png?v=1638039002" style="width:77%; padding: 1%;" alt=""/>
+    </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+  
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div >
+        <a href="#"  title="Search Icon" class="icon-search">Same</a>
+      </div> -->
+
+  </div>
+  
+</div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container-fluid">
+
+    <!-- <a class="navbar-brand" href="/">Charisma COSMETICS </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class=" navbar-nav nav-fill w-100" style="background-color: rgba(224, 37, 109, 0.836);">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="Color:white" href="/">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="/product" class="nav-link" style="Color:white">Products</a>
+        </li>
+        <!--  -->
+        <li class="nav-item">
+          <a href="/offers" class="nav-link linking" style="Color:white">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact-us" class="nav-link" style="Color:white">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about" class="nav-link" style="Color:white">About Us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/cart" class="nav-link" style="Color:white">Shopping Cart</a>
+        </li>
+        <li class="nav-item">
+          <a href="/my-account" class="nav-link" style="Color:white">My Account</a>
+        </li>
+        <% if(isAdmin) {%>
+        <li class="nav-item">
+          <a href="/admin" class="nav-link">Admin Panel</a>
+        </li>
+        <% } %> <% if(!user) {%>
+        <li class="nav-item">
+          <a href="/register" class="nav-link" style="Color:white">Register</a>
+        </li>
+        <li class="nav-item">
+          <a href="/login" class="nav-link" style="Color:white">Login</a>
+        </li>
+        <% }else { %>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link" style="Color:white" >Logout</a>
+        </li>
+
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <div id="shopify-chat-dummy">
+  <button id="dummy-chat-button" data-spec="toggle-button" class="chat-toggle--text-button bottom-right" aria-label="Chat window" aria-expanded="true" aria-controls="chat-ui" style="background-color: #202A36;" "="">
+    
+  <span class="chat-title">Chat with us</span>
+
+    <span id="dot-flashing" class="dot-flashing" style="visibility: hidden;"></span>
+    <span id="notification-badge" class="chat-notification" style="visibility: hidden;">1</span>
+  </button>
+  </div> -->

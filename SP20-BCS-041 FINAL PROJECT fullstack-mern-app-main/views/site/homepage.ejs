@@ -1,0 +1,164 @@
+
+<!-- <h1><%=pagetitle %></h1> -->
+<div class="container" style="padding-left: 3%;">
+  <div class="pic-height slider ">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="width: 100%;">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/banner_3_760b595b-2b41-4574-867c-eb5f11444311.jpg?v=1639607295"
+          alt="banner" style="width: 100%;" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/Primerrr_PC.png?v=1666270649
+          " class="d-block w-100" style="width: 100%;" alt="...">
+        </div>
+        
+       
+        <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/Banner_Sample.png?v=1638039532
+          " class="d-block w-100" style="width: 100%;" alt="...">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/Home_Page_Banners_PC.png?v=1670759721
+          " class="d-block w-100" style="width: 100%;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/2.png?v=1662457606"
+          class="d-block w-100" style="width: 100%;"   alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   </div>
+
+    <div class="circular-active" style="display: flex;margin-left:1%;">
+      <div style="width: 30%; padding: 1em;">
+        <a href="/face">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/ic_face_300x_crop_center.png?v=1639605133"
+               alt="Face" style="width: 100%;" />
+        </a>
+      </div>
+      <div style="width: 30%; padding: 1em;">
+        <a href="/oil">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/ic_oil_300x_crop_center.png?v=1639605133"
+           alt="oil" style="width: 100%;"  />
+        </a>
+      </div>
+      <div style="width: 30%; padding: 1em;">
+        <a href="/lips">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/ic_lips_300x_crop_center.png?v=1639605133"
+          alt="Lips" style="width: 100%;"  />
+        </a>
+      </div>
+      <div style="width: 30%; padding: 1em;">
+        <a href="/body">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/ic_body_300x_crop_center.png?v=1639605133"
+          alt="Body" style="width: 100%;"  />
+        </a>
+      </div>
+
+     
+
+    </div>
+
+   
+    <div class="row">
+        <% for(var i=0;i<products.length;i++) {%>
+          <div class="col-4" style="padding: 3%;">
+            <div><h5><b><%=products[i].name %></b></h5></div>
+            <div>
+              <img
+                  src="/images/uploaded/<%=products[i].image %>"
+                  alt=""
+                  width="70%"
+                />
+            </div>
+            <div>
+              <div>
+                <p><b><%=products[i].description %></b></p>
+                <p><b>Price: </b><%=products[i].price %></p>
+                <p><b>Color: </b><%=products[i].color %></p>
+              </div>
+              <a href="/add-cart/<%=products[i]._id %>" class="btn btn-info w-full"
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <% } %>
+
+        </products.length;i++)>
+    </div>
+  </div>
+  
+    <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/2_41eb00d3-c21e-4973-842d-2af202dbf954.png?v=1664440500" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0586/9187/9111/files/3_c1a90d68-fb75-4bd0-a9bd-c405666e28cf.png?v=1664440620
+          " class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <!-- ../../public/images/uploaded/fragrance and brush.png -->
+          <img src="https://media.istockphoto.com/id/1408439145/photo/autumn-skincare-and-autumn-makeup-concept-with-beauty-products-on-table.jpg?s=612x612&w=is&k=20&c=KwlmYXDOOaSx0UdU2R_xnQ-SMT22k1MS2VXoQgdnfyg=" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        
+      </button>
+    </div>
+
+  </div>
+  <div class="row" style="padding-left: 9%;">
+    <h1 style="margin-left: 40%;"><b>New Arrival</b></h1>
+    <% for(var i=0;i<3;i++) {%>
+      <div class="col-4" style="padding: 3%;">
+        <div><h5><b><%=products[i].name %></b></h5></div>
+        <div>
+          <img
+              src="/images/uploaded/<%=products[i].image %>"
+              alt=""
+              width="70%"
+            />
+        </div>
+        <div>
+          <div>
+            <p><b><%=products[i].description %></b></p>
+            <p><b>Price: </b><%=products[i].price %></p>
+            <p><b>Color: </b><%=products[i].color %></p>
+          </div>
+          <a href="/add-cart/<%=products[i]._id %>" class="btn btn-info w-full"
+            >Add To Cart</a
+          >
+        </div>
+      </div>
+      <% } %>
+
+    </products.length;i++)>
+  </div>
+  </div>
+</div>
+
+
+<%-contentFor("footer") %>

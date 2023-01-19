@@ -1,0 +1,1 @@
+console.log("My external first js code.")

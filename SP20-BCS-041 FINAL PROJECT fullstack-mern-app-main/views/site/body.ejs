@@ -1,0 +1,42 @@
+<div class="box">
+    <img style="width: 100%;" src="https://cdn.shopify.com/s/files/1/0586/9187/9111/collections/body_care_banner.png?v=1645980457">
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="arrow">
+            <i class="bi bi-caret-right">
+            
+            </i> 
+               
+            
+        </span>
+        <a href="/body">Body</a>
+    </div>
+    <div class="row" style="padding-left: 9%;">
+        <h1 style="margin-left: 40%;"><b>New Arrival</b></h1>
+        <% for(var i=0;i<3;i++) {%>
+          <div class="col-4" style="padding: 3%;">
+            <div><h5><b><%=products[i].name %></b></h5></div>
+            <div>
+              <img
+                  src="/images/uploaded/<%=products[i].image %>"
+                  alt=""
+                  width="70%"
+                />
+            </div>
+            <div>
+              <div>
+                <p><b><%=products[i].description %></b></p>
+                <p><b>Price: </b><%=products[i].price %></p>
+                <p><b>Color: </b><%=products[i].color %></p>
+              </div>
+              <a href="/add-cart/<%=products[i]._id %>" class="btn btn-info w-full"
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <% } %>
+    
+        </products.length;i++)>
+      </div>
+</div>
+<%-contentFor("footer") %>
